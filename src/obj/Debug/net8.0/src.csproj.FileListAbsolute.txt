@@ -1,0 +1,14 @@
+/mnt/extraspace/dsa/csharp/src/bin/Debug/net8.0/src
+/mnt/extraspace/dsa/csharp/src/bin/Debug/net8.0/src.deps.json
+/mnt/extraspace/dsa/csharp/src/bin/Debug/net8.0/src.runtimeconfig.json
+/mnt/extraspace/dsa/csharp/src/bin/Debug/net8.0/src.dll
+/mnt/extraspace/dsa/csharp/src/bin/Debug/net8.0/src.pdb
+/mnt/extraspace/dsa/csharp/src/obj/Debug/net8.0/src.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/extraspace/dsa/csharp/src/obj/Debug/net8.0/src.AssemblyInfoInputs.cache
+/mnt/extraspace/dsa/csharp/src/obj/Debug/net8.0/src.AssemblyInfo.cs
+/mnt/extraspace/dsa/csharp/src/obj/Debug/net8.0/src.csproj.CoreCompileInputs.cache
+/mnt/extraspace/dsa/csharp/src/obj/Debug/net8.0/src.dll
+/mnt/extraspace/dsa/csharp/src/obj/Debug/net8.0/refint/src.dll
+/mnt/extraspace/dsa/csharp/src/obj/Debug/net8.0/src.pdb
+/mnt/extraspace/dsa/csharp/src/obj/Debug/net8.0/src.genruntimeconfig.cache
+/mnt/extraspace/dsa/csharp/src/obj/Debug/net8.0/ref/src.dll
