@@ -21,13 +21,14 @@ public class Tree<T>
 {
     public Node<T> Root { get; private set; }
 
+    // That gonna be soo good 
     public Tree(T rootValue)
     {
         Root = new Node<T>(rootValue); // Assinging value to the root node
     }
 }
 
-public class Print
+abstract class Operations 
 {
     public static void PrintTree<T>(Node<T> node, string indent = "  ")
     {
