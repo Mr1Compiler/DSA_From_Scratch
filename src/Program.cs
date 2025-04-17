@@ -8,18 +8,21 @@ class Program
     {
         Stack<int> st = new Stack<int>();
 
-        st.CreateStack();
+        st.Push(100); 
+        st.Push(200); 
+        st.Push(300);
 
-        st.AddElement(1);
-        st.AddElement(2);
-        st.AddElement(3);
-        st.AddElement(4);
 
         st.PrintElements();
-        Console.WriteLine("Size is : {0}", st.NumberOfElements()); 
+		Console.WriteLine($"Top = {st.Top()}");
+		Console.WriteLine($"Size => {st.Size()}");
+        st.Pop();
 
-        st.RemoveElement();
+        st.Pop();
+        st.Pop();
+       
         st.PrintElements();
-        Console.WriteLine("Size is : {0}", st.NumberOfElements()); 
+		Console.WriteLine($"Size => {st.Size()}");
+		Console.WriteLine($"Top = {st.Top()}");
     }
 }

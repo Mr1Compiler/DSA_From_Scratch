@@ -1,26 +1,26 @@
 public class Stack<T>
 {
-    public List<T> Elements { get; set; }
+	public List<T> Elements { get; set; } = new List<T>();
 
-    public void CreateStack()
-    {
-        if (Elements == null)
-            Elements = new List<T>();
-    }
-    public void AddElement(T element) => Elements.Add(element);
+	public void Push(T element) => Elements.Add(element);
 
-    public void RemoveElement() => Elements.RemoveAt(Elements.Count - 1);
+	public void Pop()
+	{
+		if (Size() > 0)
+		{
+			Elements.RemoveAt(Size() - 1);
+		}
+	}
 
-    public void PrintElements()
-    {
-        foreach (T element in Elements)
-        {
-            Console.WriteLine($"{element}");
-        }
-    }
+	public void PrintElements()
+	{
+		foreach (T element in Elements)
+		{
+			Console.WriteLine($"{element}");
+		}
+	}
 
-    public int NumberOfElements()
-    {
-        return Elements.Count;
-    }
+	public int Size() => Elements.Count;
+
+	public T Top() => Elements[^1]; // Elements[Size() - 1]
 }
