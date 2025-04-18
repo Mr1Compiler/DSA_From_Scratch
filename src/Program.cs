@@ -1,28 +1,22 @@
 ﻿using System;
+using System.Collections;
 using System.Runtime.InteropServices;
+using System.Xml.Linq;
 namespace NormalTree;
 
 class Program
 {
-    static void Main()
-    {
-        Stack<int> st = new Stack<int>();
+	static void Main()
+	{
+		Stack<int> s = new Stack<int>();
+		s.Push(12);
+		s.Push(14);
+		s.Push(16);
 
-        st.Push(100); 
-        st.Push(200); 
-        st.Push(300);
 
-
-        st.PrintElements();
-		Console.WriteLine($"Top = {st.Top()}");
-		Console.WriteLine($"Size => {st.Size()}");
-        st.Pop();
-
-        st.Pop();
-        st.Pop();
-       
-        st.PrintElements();
-		Console.WriteLine($"Size => {st.Size()}");
-		Console.WriteLine($"Top = {st.Top()}");
-    }
+		foreach(var item in s)
+		{
+			Console.WriteLine(item);
+		}
+	}
 }

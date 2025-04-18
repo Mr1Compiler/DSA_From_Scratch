@@ -1,6 +1,9 @@
-public class Stack<T>
+using System.Collections;
+using System.Runtime.CompilerServices;
+
+public class Stack<T> : IEnumerable<T>
 {
-	public List<T> Elements { get; set; } = new List<T>();
+	private List<T> Elements { get; set; } = new();
 
 	public void Push(T element) => Elements.Add(element);
 
@@ -12,15 +15,15 @@ public class Stack<T>
 		}
 	}
 
-	public void PrintElements()
-	{
-		foreach (T element in Elements)
-		{
-			Console.WriteLine($"{element}");
-		}
-	}
-
 	public int Size() => Elements.Count;
 
 	public T Top() => Elements[^1]; // Elements[Size() - 1]
+
+	public IEnumerator<T> GetEnumerator()
+	{
+		foreach (T item in Elements)
+			yield return item;
+	}
+
+	IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 }

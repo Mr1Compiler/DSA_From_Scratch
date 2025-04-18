@@ -28,7 +28,7 @@ public class Tree<T>
     }
 }
 
-abstract class Operations 
+abstract class TreeUtils
 {
     public static void PrintTree<T>(Node<T> node, string indent = "  ")
     {
