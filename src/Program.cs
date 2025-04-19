@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Numerics;
 using System.Runtime.InteropServices;
 using System.Xml.Linq;
 namespace NormalTree;
@@ -8,15 +9,17 @@ class Program
 {
 	static void Main()
 	{
-		Stack<int> s = new Stack<int>();
-		s.Push(12);
-		s.Push(14);
-		s.Push(16);
+		var binaryTree = new BinaryTree<int>();
+
+		binaryTree.Insert(5);
+		binaryTree.Insert(3);
+		binaryTree.Insert(8);
+		binaryTree.Insert(1);
+		binaryTree.Insert(4);
+		binaryTree.Insert(6);
+		binaryTree.Insert(9);
 
 
-		foreach(var item in s)
-		{
-			Console.WriteLine(item);
-		}
+		binaryTree.PrintTree();	
 	}
 }
