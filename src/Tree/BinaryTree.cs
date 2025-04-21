@@ -1,4 +1,6 @@
+using System.Collections;
 using System.ComponentModel.Design;
+using System.Net.NetworkInformation;
 
 namespace NormalTree;
 
@@ -54,6 +56,24 @@ public class BinaryTree<T>
 			}
 		}
 	}
+
+	private void PreOrderTraversal(BinaryTreeNode<T> node)
+	{
+		if (node != null)
+		{
+			Console.Write(node.Value + " ");
+			PreOrderTraversal(node.Left);
+			PreOrderTraversal(node.Right);
+		}
+	}
+
+
+	public void PreOrderTraversal()
+	{
+		PreOrderTraversal(Root);
+		Console.WriteLine();
+	}
+
 
 	public void PrintTree()
 	{

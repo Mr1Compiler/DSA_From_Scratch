@@ -19,7 +19,7 @@ class Program
 		binaryTree.Insert(6);
 		binaryTree.Insert(9);
 
-
+		binaryTree.PreOrderTraversal();	
 		binaryTree.PrintTree();	
 	}
 }
